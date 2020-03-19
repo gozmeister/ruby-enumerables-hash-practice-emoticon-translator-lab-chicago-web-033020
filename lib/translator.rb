@@ -1,7 +1,21 @@
 # require modules here
+require "yaml"
+require 'pry'
 
-def load_library
-  # code goes here
+def load_library(file_path)
+ file = YAML.load_file(file_path)
+ hash = {
+   get_meaning: {},
+   get_emoticon:{}
+ }
+ file.each do |key, value|
+   value.each do |emoji|
+     hash[:get_meaning][emoji] = key
+    hash[:get_emoticon][emoji] = key
+  binding.pry
+  end
+  end
+ hash
 end
 
 def get_japanese_emoticon
