@@ -9,7 +9,8 @@ def load_library(file_path)
    get_emoticon:{}
  }
  file.each do |key, value|
-   hash
+   japanese_emoticon = value[0]
+   english_emoticon = value[1]
    #value.each do |emoji|
     # if !hash[:get_emoticon][emoji]
     #  hash[:get_emoticon][emoji] = key
