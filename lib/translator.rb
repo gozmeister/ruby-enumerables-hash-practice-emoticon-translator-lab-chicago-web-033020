@@ -29,5 +29,6 @@ end
 
 def get_english_meaning(file_path, emoticon)
   file = load_library(file_path)
+  binding.pry
   return "Sorry, that emoticon was not found"
 end
