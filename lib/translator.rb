@@ -13,13 +13,13 @@ def load_library(file_path)
    japanese_emoticon = value[1]
    hash[:get_meaning][japanese_emoticon] = key
    hash[:get_emoticon][english_emoticon] = japanese_emoticon
-   binding.pry
   end
  hash
 end
 
 def get_japanese_emoticon(file_path, emoticon)
   file = load_library(file_path)
+  binding.pry
 end
 
 def get_english_meaning(file_path, emoticon)
