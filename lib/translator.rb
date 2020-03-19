@@ -22,7 +22,6 @@ def get_japanese_emoticon(file_path, emoticon)
   file[:get_emoticon].select do |key, value|
       value == emoticon
     end
-    key
 end
 
 def get_english_meaning(file_path, emoticon)
