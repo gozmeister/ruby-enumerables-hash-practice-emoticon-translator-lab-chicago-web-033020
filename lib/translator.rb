@@ -9,12 +9,12 @@ def load_library(file_path)
    get_emoticon:{}
  }
  file.each do |key, value|
-   value.each do |emoji|
-     if !hash[:get_emoticon][emoji]
-      hash[:get_emoticon][emoji] = key
-    else
-      hash[:get_meaning][emoji] = key
-    end
+   #value.each do |emoji|
+    # if !hash[:get_emoticon][emoji]
+    #  hash[:get_emoticon][emoji] = key
+    #else
+    #  hash[:get_meaning][emoji] = key
+    #end
   binding.pry
   end
   end
