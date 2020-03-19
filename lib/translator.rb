@@ -13,13 +13,6 @@ def load_library(file_path)
    japanese_emoticon = value[1]
    hash[:get_meaning][japanese_emoticon] = key
    hash[:get_emoticon][english_emoticon] = japanese_emoticon
-   #value.each do |emoji|
-    # if !hash[:get_emoticon][emoji]
-    #  hash[:get_emoticon][emoji] = key
-    #else
-    #  hash[:get_meaning][emoji] = key
-    #end
-  #binding.pry
   end
  hash
 end
