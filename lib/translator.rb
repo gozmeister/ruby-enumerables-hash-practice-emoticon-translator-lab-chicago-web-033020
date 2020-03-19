@@ -22,6 +22,7 @@ def get_japanese_emoticon(file_path, emoticon)
   file[:get_emoticon].select do |key, value|
     if value == emoticon
       return key
+      binding.pry
     end
   end
 end
