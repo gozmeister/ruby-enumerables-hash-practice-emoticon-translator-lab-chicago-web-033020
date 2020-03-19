@@ -17,7 +17,6 @@ def load_library(file_path)
     #end
   binding.pry
   end
-  end
  hash
 end
 
