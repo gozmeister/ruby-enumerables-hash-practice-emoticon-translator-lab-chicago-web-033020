@@ -20,9 +20,10 @@ end
 def get_japanese_emoticon(file_path, emoticon)
   file = load_library(file_path)
   file[:get_emoticon].select do |key, value|
-    value == emoticon
+    if value == emoticon
+      return key
+    end
   end
-  key
 end
 
 def get_english_meaning(file_path, emoticon)
