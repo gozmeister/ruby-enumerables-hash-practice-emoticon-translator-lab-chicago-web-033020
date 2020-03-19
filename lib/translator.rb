@@ -19,9 +19,10 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   file = load_library(file_path)
-  file[:get_emoticon].select do |key, value|
-      key == emoticon
-      result = value
+  file[:get_emoticon].each do |key, value|
+      if key == emoticon
+      return value
+    end
       #binding.pry
     end
 end
