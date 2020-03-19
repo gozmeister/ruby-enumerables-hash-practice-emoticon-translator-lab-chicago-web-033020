@@ -19,7 +19,7 @@ def load_library(file_path)
     #else
     #  hash[:get_meaning][emoji] = key
     #end
-  binding.pry
+  #binding.pry
   end
  hash
 end
