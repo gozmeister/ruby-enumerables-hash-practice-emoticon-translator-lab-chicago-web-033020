@@ -19,7 +19,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   file = load_library(file_path)
-  file.select do |key, value|
+  file[:get_emoticon].select do |key, value|
     binding.pry
   end
   key
